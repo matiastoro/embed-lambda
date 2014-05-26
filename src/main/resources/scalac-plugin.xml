@@ -1,0 +1,4 @@
+<plugin>
+  <name>embed-lambda-plugin</name>
+  <classname>EmbedLambdaPlugin</classname>
+</plugin>

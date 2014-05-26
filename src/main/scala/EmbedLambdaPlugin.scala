@@ -58,10 +58,8 @@ with Transform with TypingTransformers with TreeDSL {
 
             //apply the lambda to the argument
             val newTree = typer.typed(Apply(Select(typedLambda, newTermName("apply")), args))
-            println(tree, newTree.symbol.owner, tree.symbol.owner)
+            //println(tree, newTree.symbol.owner, tree.symbol.owner)
             newTree.changeOwner((newTree.symbol.owner, tree.symbol.owner))
-
-            newTree
 
           } else tree
         case _ => tree
